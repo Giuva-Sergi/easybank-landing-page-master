@@ -18,7 +18,7 @@
     <header class="bg-color-100 padding-block-sm">
       <div class="container flex-container flex-center-align">
         <img src="images/logo.svg" alt="easybank logo" />
-        <nav class="primary-navigation">
+        <!-- <nav class="primary-navigation">
           <ul class="flex-container flex-center-align">
             <li>Home</li>
             <li>About</li>
@@ -27,7 +27,7 @@
             <li>Careers</li>
           </ul>
         </nav>
-        <button class="invite-btn">Request Invite</button>
+        <button class="invite-btn">Request Invite</button> -->
       </div>
     </header>
     <main>
@@ -54,13 +54,15 @@
       </section>
       <section class="bg-color-300 padding-block-lg">
         <div class="container">
-          <h2>Why choose Easybank?</h2>
-          <p>
-            We leverage Open Banking to turn your bank account into your
-            financial hub. Control your finances like never before.
-          </p>
-          <div class="flex-container flex-center-align">
-            <div class="flex-column">
+          <div class="header-container">
+            <h2>Why choose Easybank?</h2>
+            <p>
+              We leverage Open Banking to turn your bank account into your
+              financial hub. Control your finances like never before.
+            </p>
+          </div>
+          <div class="flex-container margin-block-lg features">
+            <div class="flex-column feature-card">
               <img src="images/icon-online.svg" alt="online icon services" />
               <h3>Online Banking</h3>
               <p>
@@ -68,7 +70,7 @@
                 of your finances wherever you are in the world.
               </p>
             </div>
-            <div class="flex-column">
+            <div class="flex-column feature-card">
               <img src="images/icon-budgeting.svg" alt="icon budgeting" />
               <h3>Simple Budgeting</h3>
               <p>
@@ -76,7 +78,7 @@
                 notifications when you’re close to hitting your limits.
               </p>
             </div>
-            <div class="flex-column">
+            <div class="flex-column feature-card">
               <img src="images/icon-onboarding.svg" alt="icon onboarding" />
               <h3>Fast Onboarding</h3>
               <p>
@@ -84,7 +86,7 @@
                 start taking control of your finances right away.
               </p>
             </div>
-            <div class="flex-column">
+            <div class="flex-column feature-card">
               <img src="images/icon-api.svg" alt="icon api" />
               <h3>Open API</h3>
               <p>
@@ -95,11 +97,11 @@
           </div>
         </div>
       </section>
-      <section class="articles-section padding-block-lg bg-color-200">
+      <section class="padding-block-lg bg-color-200">
         <div class="container">
-          <h2>Latest Articles</h2>
-          <div class="flex-container">
-            <article class="bg-color-100">
+          <h2 class="margin-block-end-sm">Latest Articles</h2>
+          <div class="flex-container articles-section">
+            <article class="bg-color-100 article">
               <img
                 src="images/image-currency.jpg"
                 alt="image of various currencies"
@@ -117,7 +119,7 @@
                 </p>
               </div>
             </article>
-            <article class="bg-color-100">
+            <article class="bg-color-100 article">
               <img
                 src="images/image-restaurant.jpg"
                 alt="image of a restaurant table showing various dishes"
@@ -134,7 +136,7 @@
                 </p>
               </div>
             </article>
-            <article class="bg-color-100">
+            <article class="bg-color-100 article">
               <img
                 src="images/image-plane.jpg"
                 alt="image of a plane"
@@ -152,7 +154,7 @@
                 </p>
               </div>
             </article>
-            <article class="bg-color-100">
+            <article class="bg-color-100 article">
               <img
                 src="images/image-confetti.jpg"
                 alt="image of various confettis flying around"
@@ -175,8 +177,8 @@
       </section>
     </main>
     <footer class="bg-color-700">
-      <div class="container footer flex-container__footer padding-block-sm">
-        <div class="footer-icons">
+      <div class="container footer flex-container__footer padding-block-md">
+        <div class="footer-icons flex-column">
           <img src="images/logo.svg" alt="logo icon" />
           <div class="socials">
             <img src="images/icon-facebook.svg" alt="facebook" />
@@ -187,18 +189,18 @@
           </div>
         </div>
         <div class="footer-navigation flex-container__footer">
-          <ul>
+          <ul class="flex-column footer-nav-links">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
-          <ul>
+          <ul class="flex-column footer-nav-links">
             <li><a href="#">Careers</a></li>
             <li><a href="#">Support</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
         </div>
-        <div class="footer-cta">
+        <div class="footer-cta flex-column">
           <button class="invite-btn">Request Invite</button>
           <p class="copyright">© Easybank. All Rights Reserved</p>
         </div>
